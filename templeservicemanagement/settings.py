@@ -6,9 +6,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Security
 SECRET_KEY = 'django-insecure-#z81_pa7#wb0iux)ie2iz#s$3_c$0n!_*kinarwyc0&it7wvlu'
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'python-django-pgyd.onrender.com', '*']
+ALLOWED_HOSTS = ['127.0.0.1', 'python-django-pgyd.onrender.com']
 
 # Get PORT from environment variable (Render provides this)
 PORT = os.getenv("PORT", "10000")
