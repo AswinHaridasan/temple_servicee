@@ -11,7 +11,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['127.0.0.1', 'python-django-pgyd.onrender.com', '*']
 
 # Get PORT from environment variable (Render provides this)
-PORT = os.getenv("PORT", "8000")
+PORT = os.getenv("PORT", "10000")
 
 # Application definition
 INSTALLED_APPS = [

@@ -18,5 +18,9 @@ def main():
     execute_from_command_line(sys.argv)
 
 
-if __name__ == '__main__':
-    main()
+if __name__ == "__main__":
+    import os
+    from django.core.management import execute_from_command_line
+
+    os.environ.setdefault("PORT", os.getenv("PORT", "10000"))  # Default to 10000
+    execute_from_command_line(sys.argv)
