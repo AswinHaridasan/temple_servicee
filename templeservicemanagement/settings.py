@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-#z81_pa7#wb0iux)ie2iz#s$3_c$0n!_*kinarwyc0&it7wvlu
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost','templeservicemanagement.onrender.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost','python-django-pgyd.onrender.com','']
 
 
 
