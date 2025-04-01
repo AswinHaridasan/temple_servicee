@@ -106,21 +106,19 @@ DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 # Logging
 LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'handlers': {
-        'file': {
-            'level': 'DEBUG',
-            'class': 'logging.FileHandler',
-            'filename': 'django_debug.log',
+    "version": 1,
+    "handlers": {
+        "mail_errors": {
+            "level": "ERROR",
+            "class": "logging.FileHandler",
+            "filename": "email_errors.log",
         },
     },
-    'loggers': {
-        'django': {
-            'handlers': ['file'],
-            'level': 'DEBUG',
-            'propagate': True,
+    "loggers": {
+        "django": {
+            "handlers": ["mail_errors"],
+            "level": "ERROR",
+            "propagate": True,
         },
     },
 }
-
