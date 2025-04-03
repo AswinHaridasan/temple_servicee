@@ -9,7 +9,11 @@ pymysql.install_as_MySQLdb()
 SECRET_KEY = 'django-insecure-#z81_pa7#wb0iux)ie2iz#s$3_c$0n!_*kinarwyc0&it7wvlu'
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    "python-django-pgyd.onrender.com",  # Your Render app URL
+    "localhost", 
+    "127.0.0.1"
+]
 
 # Get PORT from environment variable (Render provides this)
 PORT = os.getenv("PORT", "8000")
@@ -82,6 +86,10 @@ LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'Asia/Kolkata'
 USE_I18N = True
 USE_TZ = True
+
+CSRF_COOKIE_SECURE = False
+CSRF_COOKIE_HTTPONLY = False
+
 
 # Static and Media files
 STATIC_URL = 'static/'
