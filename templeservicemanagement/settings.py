@@ -1,9 +1,10 @@
 from pathlib import Path
 import os
+import pymysql
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
+pymysql.install_as_MySQLdb()
 # Security
 SECRET_KEY = 'django-insecure-#z81_pa7#wb0iux)ie2iz#s$3_c$0n!_*kinarwyc0&it7wvlu'
 DEBUG = False
@@ -58,10 +59,15 @@ WSGI_APPLICATION = 'templeservicemanagement.wsgi.application'
 # Database
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'mydatabase_81yz',  # Extracted from URL
+        'USER': 'mydatabase_81yz_user',  # Extracted from URL
+        'PASSWORD': 'einzCmJ7usGD5ZINJItWap6pfuf2dM4s',  # Extracted from URL
+        'HOST': 'dpg-cvmil2buibrs73bhmp20-a.oregon-postgres.render.com',  # Extracted from URL
+        'PORT': '5432',  # Default PostgreSQL port
     }
 }
+
 
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
