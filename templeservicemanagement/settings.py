@@ -89,6 +89,10 @@ USE_TZ = True
 
 CSRF_COOKIE_SECURE = False
 CSRF_COOKIE_HTTPONLY = False
+CSRF_TRUSTED_ORIGINS = [
+    "https://python-django-pgyd.onrender.com"
+]
+
 
 
 # Static and Media files
