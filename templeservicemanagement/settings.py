@@ -12,7 +12,8 @@ DEBUG = False
 ALLOWED_HOSTS = [
     "python-django-pgyd.onrender.com",  # Your Render app URL
     "localhost", 
-    "127.0.0.1"
+    "127.0.0.1",
+    "*",  # Allow all hosts (not recommended for production)
 ]
 
 # Get PORT from environment variable (Render provides this)
