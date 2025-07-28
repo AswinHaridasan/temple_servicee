@@ -107,7 +107,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 CERTIFICATES_DIR = os.path.join(MEDIA_ROOT, 'certificates')
 
-# Default primary key field type
+# Default primary key field typee
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Stripe Keys (Replace with actual keys)
