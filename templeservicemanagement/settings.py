@@ -64,10 +64,10 @@ WSGI_APPLICATION = 'templeservicemanagement.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mydatabase_81yz',  # Extracted from URL
+        'NAME': 'mydatabase_81yz_rwh5',  # Extracted from URL
         'USER': 'mydatabase_81yz_user',  # Extracted from URL
-        'PASSWORD': 'einzCmJ7usGD5ZINJItWap6pfuf2dM4s',  # Extracted from URL
-        'HOST': 'dpg-cvmil2buibrs73bhmp20-a.oregon-postgres.render.com',  # Extracted from URL
+        'PASSWORD': 'mWjGuhnaanZrurbNYLjEdDL7sfkfZDpa',  # Extracted from URL
+        'HOST': 'dpg-d23hu97diees739kvt1g-a.oregon-postgres.render.com',  # Extracted from URL
         'PORT': '5432',  # Default PostgreSQL port
     }
 }
